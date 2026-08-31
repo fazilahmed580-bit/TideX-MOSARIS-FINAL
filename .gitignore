@@ -1,4 +1,4 @@
-# Python & Environment
+# Python & Bytecode
 venv/
 .venv/
 ENV/
@@ -10,6 +10,10 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Generated P4 Test Outputs & Large Offline Datasets
+P4/attribution/outputs/
+P4/data/*.zst
 
 # Node & Build artifacts
 node_modules/
