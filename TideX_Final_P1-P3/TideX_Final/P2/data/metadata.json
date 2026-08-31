@@ -1,0 +1,13 @@
+{
+  "spill_detected": true,
+  "confidence": 0.8348,
+  "area_km2": 215.0963,
+  "centroid": {
+    "lat": 29.11045,
+    "lon": -88.730939
+  },
+  "n_polygons": 111,
+  "polygon_file": "spill_aoi.geojson",
+  "crs": "EPSG:4326",
+  "source_image": "2018_08_21_.tif"
+}

@@ -1,0 +1,14 @@
+# Ignore large temporary NetCDF downloads by default
+data/*.nc
+
+# Explicitly track essential P1 and P2 project forcing datasets
+!data/era5_p1_2018.nc
+!data/cmems_p1_2018.nc
+!data/era5_region.nc
+!data/cmems_region.nc
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/

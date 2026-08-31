@@ -1,0 +1,151 @@
+{
+  "_comment": "MOSARIS Demo Case 001 -- Gulf of Mexico Oil Spill Investigation",
+  "_description": "Fictional demo case for TideX MOSARIS hackathon MVP.",
+  "_coordinate_note": "GeoJSON coordinates are [longitude, latitude]. centroid is [latitude, longitude].",
+
+  "spill_id": "demo_001",
+  "name": "Gulf of Mexico Demo Spill",
+  "description": "Oil spill detected by Sentinel-1 SAR, approximately 80 km south of the Mississippi River Delta, Gulf of Mexico.",
+  "region": "Northern Gulf of Mexico",
+
+  "spill": {
+    "spill_id": "demo_001",
+    "timestamp": "2026-08-30T10:00:00",
+    "spill_detected": true,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-88.40, 28.85],
+        [-88.25, 28.85],
+        [-88.20, 28.75],
+        [-88.30, 28.65],
+        [-88.45, 28.68],
+        [-88.48, 28.78],
+        [-88.40, 28.85]
+      ]]
+    },
+    "centroid": [28.75, -88.35],
+    "area_km2": 12.4,
+    "confidence": 0.91
+  },
+
+  "source": {
+    "origin_region": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-88.65, 28.45],
+        [-88.45, 28.45],
+        [-88.45, 28.58],
+        [-88.65, 28.58],
+        [-88.65, 28.45]
+      ]]
+    },
+    "origin_time_start": "2026-08-30T07:00:00",
+    "origin_time_end": "2026-08-30T10:00:00",
+    "uncertainty_polygon": {
+      "type": "Polygon",
+      "coordinates": [[
+        [-88.80, 28.32],
+        [-88.30, 28.32],
+        [-88.30, 28.70],
+        [-88.80, 28.70],
+        [-88.80, 28.32]
+      ]]
+    },
+    "backward_particles": [
+      [-88.35, 28.75],
+      [-88.42, 28.70],
+      [-88.48, 28.65],
+      [-88.52, 28.60],
+      [-88.55, 28.55],
+      [-88.57, 28.52],
+      [-88.60, 28.50]
+    ],
+    "forward_particles": [
+      [-88.35, 28.75],
+      [-88.30, 28.82],
+      [-88.25, 28.90],
+      [-88.20, 28.98],
+      [-88.15, 29.05],
+      [-88.10, 29.12]
+    ]
+  },
+
+  "candidates": [
+    {
+      "mmsi": "123456789",
+      "vessel_name": "MV Gulf Star",
+      "distance_km": 4.2,
+      "time_difference_hr": 0.5,
+      "speed": 11.4,
+      "heading": 142,
+      "track": {
+        "type": "LineString",
+        "coordinates": [
+          [-88.75, 28.25],
+          [-88.65, 28.35],
+          [-88.55, 28.45],
+          [-88.50, 28.52],
+          [-88.45, 28.60],
+          [-88.35, 28.70],
+          [-88.25, 28.78]
+        ]
+      }
+    },
+    {
+      "mmsi": "234567890",
+      "vessel_name": "MV Coastal Voyager",
+      "distance_km": 11.8,
+      "time_difference_hr": 1.2,
+      "speed": 8.7,
+      "heading": 78,
+      "track": {
+        "type": "LineString",
+        "coordinates": [
+          [-88.85, 28.40],
+          [-88.70, 28.48],
+          [-88.55, 28.53],
+          [-88.40, 28.58],
+          [-88.25, 28.62],
+          [-88.10, 28.68]
+        ]
+      }
+    },
+    {
+      "mmsi": "345678901",
+      "vessel_name": "MV Sea Wanderer",
+      "distance_km": 28.5,
+      "time_difference_hr": 3.8,
+      "speed": 6.2,
+      "heading": 215,
+      "track": {
+        "type": "LineString",
+        "coordinates": [
+          [-87.90, 29.10],
+          [-88.00, 28.95],
+          [-88.10, 28.80],
+          [-88.20, 28.68],
+          [-88.30, 28.58]
+        ]
+      }
+    },
+    {
+      "mmsi": "456789012",
+      "vessel_name": "MV Gulf Runner",
+      "distance_km": 15.2,
+      "time_difference_hr": 0.8,
+      "speed": 14.1,
+      "heading": 310,
+      "track": {
+        "type": "LineString",
+        "coordinates": [
+          [-88.40, 28.75],
+          [-88.45, 28.88],
+          [-88.50, 29.00],
+          [-88.55, 29.12],
+          [-88.60, 29.25]
+        ]
+      }
+    }
+  ]
+}

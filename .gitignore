@@ -1,0 +1,32 @@
+# Python & Environment
+venv/
+.venv/
+ENV/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node & Build artifacts
+node_modules/
+dist/
+build/
+.output/
+
+# Environment secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# IDE & System
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
